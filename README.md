@@ -16,6 +16,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 To make any changes in table header name go to the below file location and make changes.
 `src/App.js`
 
+```
 const customerTransactionHeader = [
     {
       Header:'Customer',            # change header name
@@ -34,12 +35,14 @@ const customerTransactionHeader = [
       accessor: 'points'            # access header name
     }
   ];
+```
 
 # In the project we have used hard-coded test data.
 
 To make any changes in the test data go to the below file and make changes.
 `src/api/dataService.js`
 
+```
 export default function() {
   return Promise.resolve(
     [
@@ -58,4 +61,4 @@ export default function() {
     ]
   )
 }
-
+```
